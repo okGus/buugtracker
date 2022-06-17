@@ -6,7 +6,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 export function NavBar() {
     return (
         <>
-        <Navbar collapseOnSelect fixed='top'>
+        <Navbar collapseOnSelect fixed='top' style={{ position: "fixed" }}>
             <Container>
                 <Navbar.Collapse>
                     <Nav className="me-auto">
