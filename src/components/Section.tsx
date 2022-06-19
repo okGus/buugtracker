@@ -1,37 +1,22 @@
-import { useEffect, useState } from "react";
-
-function useWindowSize() {
-    const [width, setWidth] = useState(window.innerWidth)
-    useEffect(() => {
-        const handleResize = () => {
-            setWidth(window.innerWidth)
-        }
-        window.addEventListener('resize', handleResize)
-        return () => {
-            window.removeEventListener('resize', handleResize)
-        }
-    }, [])
-    return width;
-}
-
 export function Section() {
-    const width = useWindowSize();
     return (
         <>
-        <div className="content" style={{ 
-            position: "absolute", 
-            marginTop: "56px",
-            backgroundImage: "linear-gradient(to right, #12caee, #11b8d9, #0f96b0)",
-            width: width,
-            height: "300px"}}>
-        <div style={{ 
-            textAlign: "center",
-            marginTop: "100px"
-         }}><h1>Buug</h1></div>
+        <div className="content">
+            <div style={{ 
+                textAlign: "center",
+                marginTop: "100px"
+            }}>
+                <h1>Buug Tracker</h1>
+                <h3 style={{
+                    marginTop: "500px"
+                }}>About</h3>
+                <a>Why I did this?</a>
+                <br></br>
+                <a>Education purposes, front-end (kind of), backend (mostly)</a>
+                <br></br>
+                <a>Learning Next.js, MongoDB, Prisma, tRPC, Vercel</a>
+            </div>
         </div>
         </>
     );
 }
-// in section.css that you will have to create
-// maybe have them in their won folder
-// have position: absolute;
