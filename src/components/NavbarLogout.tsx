@@ -3,7 +3,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 
 // Container adds extra padding
 
-export function NavBar() {
+export function NavbarLogout() {
     return (
         <>
         <Navbar bg="dark" variant="dark" collapseOnSelect fixed='top' style={{ position: "fixed" }}>
@@ -18,8 +18,8 @@ export function NavBar() {
                         <Link href="#" passHref>
                             <Nav.Link eventKey="1">Home</Nav.Link>
                         </Link>
-                        <Link href="#" passHref>
-                            <Nav.Link eventKey="2">Login</Nav.Link>
+                        <Link href="/api/auth/logout" passHref>
+                            <Nav.Link eventKey="2">Logout</Nav.Link>
                         </Link>
                     </Nav>
                 </Navbar.Collapse>
