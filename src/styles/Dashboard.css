@@ -1,0 +1,8 @@
+.DashboardNavWrapper {
+    display: flex;
+}
+
+.DashboardPage {
+    height: 100vh;
+    overflow-y: scroll;
+}
