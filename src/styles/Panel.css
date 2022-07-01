@@ -16,6 +16,7 @@
 
 .Panel__HomeText {
     font-size: 22px;
+    padding-left: 5px;
 }
 
 .Panel__Content {
@@ -24,6 +25,37 @@
     width: 100%;
     height: 100vh;
 }
+
+.Panel__NewIssue {
+    display: inline-flex;
+}
+
+.Panel__NewIssueText {
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+.btn_test {
+    padding: 4px 10px;
+    cursor: pointer;
+    opacity: 0.6;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid transparent;
+    transition: ease border-bottom 250ms;
+}
+
+.btn_test:active {
+    border-bottom: 2px solid black;
+    opacity: 1;
+}
+
+.btn_test.active {
+    border-bottom: 2px solid black;
+    opacity: 1;
+}
+
 
 /* .Panel__box {
     display: inherit;

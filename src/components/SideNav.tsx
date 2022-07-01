@@ -1,11 +1,19 @@
 // <h1 className="Panel__HomeText"><a href="link here">Dashboard</a></h1>
 
+import Script from "next/script"
 import { useState } from "react"
-import { Button } from "react-bootstrap"
 import { ColorOne } from "../pages/Dashboard/ColorOne"
 import { ColorTwo } from "../pages/Dashboard/ColorTwo"
 
 export function SideNav() {
+
+    function colorOne() {
+        setActive("Color_One")
+    }
+
+    function colorTwo() {
+        setActive("Color_Two")
+    }
 
     const [active, setActive] = useState("Color_One")
 
@@ -22,16 +30,33 @@ export function SideNav() {
         </div>
         <div>Bugs</div>
         <div>Add Issue</div>
-        <div>Calendar</div>
+        <div>Calendar</div> 
         <div>Settings</div>
-        <div><Button onClick={() => setActive("Color_One")}>Color Component Test 1</Button></div>
-        <div><Button onClick={() => setActive("Color_Two")}>Color Component Test 2</Button></div>
+        <div className="Panel__NewIssue">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-file-earmark-plus" viewBox="0 0 16 16">
+            <path d="M8 6.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V11a.5.5 0 0 1-1 0V9.5H6a.5.5 0 0 1 0-1h1.5V7a.5.5 0 0 1 .5-.5z"/>
+            <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"/>
+            </svg>
+            <h6 className="Panel__NewIssueText">New Issue</h6>
+        </div>
+        <div><button className="btn_test active" onClick={() => colorOne()}>Color Component</button></div>
+        <div><button className="btn_test" onClick={() => colorTwo()}>Color Component</button></div>
     </div>
     <div className="Panel__Content">
         {active === "Color_One" && <ColorOne />}
         {active === "Color_Two" && <ColorTwo />}
         <div className="Panel__box"></div>
     </div>
+    <Script id="active-btn">{`
+        var btns = document.getElementsByClassName("btn_test");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    `}</Script>
     </>
     )
 }
