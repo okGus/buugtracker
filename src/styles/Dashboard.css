@@ -3,6 +3,7 @@
 }
 
 .DashboardPage {
+    display: flex;
     height: 100vh;
     overflow-y: scroll;
 }

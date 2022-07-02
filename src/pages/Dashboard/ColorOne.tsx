@@ -3,7 +3,6 @@ export const ColorOne = () => {
         width: "20px",
         height: "20px",
         backgroundColor: "red",
-        marginTop: "90px",
-        marginLeft: "90px"
+        marginTop: "56px"
     }}></div>
 }
