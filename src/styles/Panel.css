@@ -1,6 +1,6 @@
 .Panel {
     width: 200px;
-    background: #aad4f5;
+    background: #014172;
     height: 100vh;
     padding-left: 20px;
     list-style: none;
@@ -37,6 +37,7 @@
 }
 
 .btn_ {
+    color: white;
     padding: 4px 10px;
     cursor: pointer;
     opacity: 0.6;
@@ -48,12 +49,12 @@
 }
 
 .btn_:active {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
     opacity: 1;
 }
 
 .btn_.active {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
     opacity: 1;
 }
 
@@ -75,4 +76,8 @@
     padding-left: 5px;
     vertical-align: middle;
     padding-bottom: 0rem;
+}
+
+.bi {
+    color: white;
 }
