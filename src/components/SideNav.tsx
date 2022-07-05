@@ -24,7 +24,7 @@ export function SideNav() {
     return (
     <>
     <div className="Panel" id="Panel">
-        <div className="Panel__EmptyPad"></div>
+        
 
         <li id="Panel__Dashboard">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" className="bi bi-house-door" viewBox="0 0 16 16">
