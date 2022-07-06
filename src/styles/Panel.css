@@ -3,12 +3,8 @@
     background: #014172;
     height: 100vh;
     padding-left: 20px;
-    margin-top: 56px;
 }
-
-.Panel__EmptyPad {
-    height: 56px;
-}
+/* ^ margin-top: 56px;*/
 
 .Panel__Dashboard {
     display: inline-flex;
@@ -21,11 +17,10 @@
 }
 
 .Panel__Content {
-    
-    margin-top: 56px;
     width: 100%;
     height: 100vh;
 }
+/* ^ margin-top: 56px;*/
 
 .Panel__NewIssue {
     display: inline-flex;

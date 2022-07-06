@@ -1,8 +1,3 @@
-.Settings {
-    margin-top: 56px;
-    width: 100%;
-}
-
 .Settings__wrapper {
     background: rgb(230, 230, 230);
     height: 100vh;
@@ -14,7 +9,7 @@
 }
 
 .Settings__container {
-    max-width: 700px;
+    max-width: 800px;
     width: 100%;
     padding: 25px 30px;
     background: #fff;
@@ -32,14 +27,24 @@
 }
 
 .User__name,
-.User__email {
+.User__email,
+.User__birthday,
+.User__gender {
     margin: 20px;
 }
 
-.Tittle {
-    margin: 20px;
+.Title {
+    margin: 10px;
 }
 
 .details {
     padding: 5px;
+}
+
+.User__name .details {
+    padding-right: 24px;
+}
+
+.User__gender .details {
+    padding-right: 12px;
 }

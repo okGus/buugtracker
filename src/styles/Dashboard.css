@@ -2,8 +2,13 @@
     display: flex;
 }
 
-.DashboardPage {
+.Empty__Pad {
+    width: 100%;
+    height: 56px;
+}
+
+/* .DashboardPage {
     display: flex;
     height: 100vh;
     overflow-y: scroll;
-}
+} */
