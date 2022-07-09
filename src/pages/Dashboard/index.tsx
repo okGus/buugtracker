@@ -10,7 +10,7 @@ const Dashboard = () => {
     return (
         <>
         <NavbarLogout />
-        <div className="Empty__Pad"></div>
+        
         <div className="DashboardNavWrapper" id="DashboardNavWrapper">
         <SideNav />
             <div className="DasboardPage">

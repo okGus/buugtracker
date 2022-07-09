@@ -16,6 +16,10 @@
     border-radius: 10px;
 }
 
+#Settings__emptypad {
+    height: 56px;
+}
+
 .Settings__container .Title {
     font-size: 25px;
     font-weight: 500;

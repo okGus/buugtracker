@@ -6,6 +6,10 @@
 }
 /* ^ margin-top: 56px;*/
 
+#Panel__emptypad {
+    height: 56px;
+}
+
 .Panel__Dashboard {
     display: inline-flex;
     padding-top: 10px;

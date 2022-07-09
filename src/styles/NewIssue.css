@@ -1,0 +1,22 @@
+.NewIssue__wrapper {
+    background: rgb(230, 230, 230);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.NewIssue__container {
+    max-width: 800px;
+    width: 100%;
+    padding: 25px 30px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.NewIssue__container .Title {
+    font-size: 25px;
+    font-weight: 500;
+}
