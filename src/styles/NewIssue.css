@@ -16,7 +16,27 @@
     border-radius: 10px;
 }
 
-.NewIssue__container .Title {
+.NewIssue__container .NewIssue__form .Title {
     font-size: 25px;
     font-weight: 500;
+}
+
+.NewIssue__container .NewIssue__form input {
+    width: 100%;
+}
+
+.NewIssue__container .NewIssue__form .description {
+    height: 100px;
+    width: 100%;
+}
+
+.NewIssue__container .NewIssue__form button {
+    color: white;
+    padding: 4px 10px;
+    cursor: pointer;
+    opacity: 0.6;
+    background: black;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
 }

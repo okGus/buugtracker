@@ -1,21 +1,9 @@
-// <h1 className="Panel__HomeText"><a href="link here">Dashboard</a></h1>
-
 import Script from "next/script"
 import { useState } from "react"
-import { ColorOne } from "../pages/Dashboard/ColorOne"
-import { ColorTwo } from "../pages/Dashboard/ColorTwo"
 import { NewIssue } from "../pages/Dashboard/NewIssue"
 import { Settings } from "../pages/Dashboard/Settings"
 
 export function SideNav() {
-
-    function colorOne() {
-        setActive("Color_One")
-    }
-
-    function colorTwo() {
-        setActive("Color_Two")
-    }
 
     const [active, setActive] = useState("")
 
@@ -57,14 +45,10 @@ export function SideNav() {
             <button className="btn_" id="Settings" onClick={() => setActive("Settings")}>Settings</button>
         </li>
         
-        <button className="btn_" onClick={() => colorOne()}>Color Component</button>
-        <button className="btn_" onClick={() => colorTwo()}>Color Component</button>
     </div>
     <div className="Panel__Content">
         {active === "Settings" && <Settings />}
         {active === "NewIssue" && <NewIssue />}
-        {active === "Color_One" && <ColorOne />}
-        {active === "Color_Two" && <ColorTwo />}
     </div>
     <Script id="active-btn">{`
         var btnContainer = document.getElementById("Panel");
