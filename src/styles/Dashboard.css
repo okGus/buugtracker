@@ -1,0 +1,44 @@
+.DashboardNavWrapper {
+    display: flex;
+}
+
+.Empty__Pad {
+    width: 100%;
+    height: 56px;
+}
+
+.MainDash__wrapper {
+    background: rgb(230, 230, 230);
+    padding: 0px 5px 10px 10px;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+/* MainDash__wrapper {
+    background: rgb(230, 230, 230);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px;
+    height: 100vh;
+} */
+
+.MainDash__container {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 30px 10px 10px;
+}
+
+.post-submission {
+    width: 100%;
+    padding: 25px 30px;
+    background: #fff;
+    border-radius: 10px;
+    margin: 10px
+}
+/* .DashboardPage {
+    display: flex;
+    height: 100vh;
+    overflow-y: scroll;
+} */

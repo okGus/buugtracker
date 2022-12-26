@@ -1,0 +1,42 @@
+.NewIssue__wrapper {
+    background: rgb(230, 230, 230);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.NewIssue__container {
+    max-width: 800px;
+    width: 100%;
+    padding: 25px 30px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.NewIssue__container .NewIssue__form .Title {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.NewIssue__container .NewIssue__form input {
+    width: 100%;
+}
+
+.NewIssue__container .NewIssue__form .description {
+    height: 100px;
+    width: 100%;
+}
+
+.NewIssue__container .NewIssue__form button {
+    color: white;
+    padding: 4px 10px;
+    cursor: pointer;
+    opacity: 0.6;
+    background: black;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+}
