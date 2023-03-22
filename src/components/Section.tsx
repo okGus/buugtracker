@@ -15,6 +15,8 @@ export function Section() {
                 <a>Educational purposes and learning, front-end (kind of), backend (mostly)</a>
                 <br></br>
                 <a>Learning Next.js, MongoDB, Prisma, tRPC, Vercel, Auth0</a>
+                <br></br>
+                <a href="https://www.flaticon.com/free-icons/checklist" title="checklist icons">Checklist icons created by HJ Studio - Flaticon</a>
             </div>
         </div>
         </>
